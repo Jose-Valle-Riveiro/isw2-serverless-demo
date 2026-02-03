@@ -24,7 +24,8 @@ export default async function handler(req, res) {
         res.status(200).json({
             entrada: nombre,
             resultado: data.resultado,
-            flujo: "entrada -> procesar"
+            flujo: "entrada -> procesar",
+            tiempo: data.timestamp
         });
     }
     catch (err){
