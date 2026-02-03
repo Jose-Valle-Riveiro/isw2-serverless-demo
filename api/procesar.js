@@ -3,11 +3,10 @@ export default function handler(req, res){
 
     if(nombre == "error"){
         res.status(400).json({
-            error: "Error: no se puede usar 'error' como nombre",
+            resultado: "Error: no se puede usar 'error' como nombre",
             timestamp: new Date().toISOString()
         });
-    }
-    else{
+    }else{
         res.status(200).json({
             resultado: `Nombre procesado: ${nombre.toUpperCase()}`,
             timestamp: new Date().toISOString()
