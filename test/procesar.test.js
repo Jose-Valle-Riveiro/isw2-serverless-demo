@@ -47,7 +47,7 @@ test("procesar maneja nombre ausente", () => {
   handler(req, res);
 
   assert.equal(res.statusCode, 200);
-  assert.ok(res.body.resultado.includes("ANÓNIMO"));
+  assert.ok(res.body.resultado.includes("ANONIMO"));
 });
 
 test("Verificar que no se acepte error como nombre", () => {
