@@ -1,5 +1,5 @@
 import test from "node:test";
-import assert from "mode:assert/strict";
+import assert from "node:assert/strict";
 import handler from "../api/procesar.js";
 
 test("Procesar convierte el nombre a mayúsculas", () => {
